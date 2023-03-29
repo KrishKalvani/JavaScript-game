@@ -1,0 +1,318 @@
+body {
+    text-align: center;  /*this aligns any content in the body to the center(kept just in case to make sure)*/
+    background-color: lightblue;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /*NAVIGATION CSS*/
+  #navigation {
+    text-align: center;
+    overflow: hidden; /*shows the background bar*/
+    background-color: #A3B7EB; /*background color of the bar*/
+  }
+  
+  #navigation a { /*contents of the navbar*/ /*keeps the contents left side*/
+    float: left; 
+    color: #f2f2f2;
+    padding: 1.3% 1%;
+    text-decoration: none;
+    font-size: 120%;
+  }
+  
+  #navigation a:hover { /*hover effect*/
+    background-color: rgb(97, 97, 216);
+    color: white;
+  }
+  #navigation a.split {/*putting the register and login to the right and linking this CSS to them*/
+    float: right;
+    text-decoration:underline;
+  }
+   #navigation a.selected { /*Once selected, the navbar selected item will be black color*/
+    background-color: black;
+  }  
+  #navigation a.selectedLogin {/*specifying the CSS for this class to keep "login" underlined and to the right even after selection*/
+    float:right;
+   background-color: black;
+   text-decoration: underline;
+  }  
+  #navigation a.selectedRegister{/*specifying the CSS for this class to keep "register" underlined and to the right even after selection*/
+    float:right;
+   background-color: black;
+   text-decoration: underline;
+  } 
+  .navbarLogo{/*adjusting the size and position of the "rocketman" logo in the navbar*/
+  width:15%;
+  height:8%;
+  float: left;
+}
+  .box1 {/*this is the welcome guest box. Adjusting its size and color*/
+    text-align: center;
+    height: 8.5%;
+    width: 10%;
+    background-color:grey;
+    float: right;
+}
+  /*footer*/
+  .footer{/*this is the footer at the bottom of each page*/
+    background-color: #A3B7EB;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+    
+    
+  }
+  /*HOME PAGE CSS*/ 
+  .Logo{ /*Design for the rocket with its title as one picture in the homePage*/
+    height: 85%;
+    width: 35%;          
+    display: block;
+     margin-left: auto;
+     margin-right:auto; 
+    margin-top: 7%; 
+    margin-bottom: 0px;
+  }
+  .registerButton , .loginButton{/*the 2 buttons in the homepage*/
+    position: absolute;
+    background: rgba(217, 217, 217, 0.6);
+    border: 3px solid #000000;
+  }
+   .loginButton{/*positioning and sizing login button*/
+    margin-top: -23.99%;
+    margin-right:-20%;
+    margin-left:2%;
+    width: 10%;
+    height: 7%;
+    font-size:100%;
+  }
+  .loginButton:hover{/*hover effect for login button*/
+    background-color: #979595;
+    color: white;
+    cursor: pointer;
+  }
+  .registerButton{/*positioning and sizing of the register button*/
+    margin-top: -24%;
+    margin-right:20%;
+    margin-left:-10%;
+    width: 10%;
+    height: 7%;
+    font-size:100%;
+  } 
+  .registerButton:hover{/*hover effect of login button*/
+    background-color: #979595;
+    color: white;
+    cursor: pointer;
+  }
+
+  .cloud1{/*clouds on the right side*/
+    position : absolute;
+    margin-left:26%;
+    margin-top:15%;
+    
+  }
+  .cloud2{/*clouds on the left side*/
+    position : absolute;
+    margin-left:-45%;
+    margin-top:22%;
+    
+  }
+  .meteor1{/*positioning meteor1 on the right side*/
+    position : absolute;
+    margin-left:20%;
+    margin-top:2%;
+    
+  }
+  .meteor2{/*positioning meteor2 on the left side*/
+    position : absolute;
+    margin-left:-50%;
+    margin-top:2%;
+    transform: scaleX(-1);/*this flips the meteor image*/
+
+  }
+
+
+
+
+/*RULES PAGE CSS*/
+.RulesBox{/*The background of the rules content box*/
+  width:75%;
+  height:85%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right:auto; 
+  margin-top: 2%; 
+  background-color: #514949;
+  opacity: 0.85;
+}
+.RulesHeading{/*Heading inside the rules box*/
+  color:white;
+  margin-right: 78%;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+ }
+ .RulesContent{/*Information inside the rules box below the heading*/
+  font-size: 120%;
+  text-align:left;
+  color:white;
+ }
+
+.shieldPic{/*Picture of the first power up*/
+  width:20%;
+  height:30%;
+  margin-right:30%;
+  margin-top:-1%;
+}
+.clockPic{/*Picture of the second power up*/
+  position: absolute;
+  width:13%;
+  height:18%;
+  margin-top:1%;
+  margin-left:-19%;
+}
+
+
+
+/*LEADERBOARD PAGE CSS*/
+.leaderboardBox{/*the background of the leaderboard content box*/
+  width:75%;
+  height:85%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right:auto; 
+  margin-top: 2%; 
+  background-color: #514949;
+  opacity: 0.85;
+}
+.LeaderboardHeading{/*Heading inside the leaderboard box*/
+  color:white;
+  margin-right: 72%;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+ }
+ .leaderboardBox table{/*Adjusting the size of the entire leaderboard table*/
+  width:90%; 
+  height:80%;
+  
+ }
+ .leaderboardBox table, th, td {/*Putting a black solid line border and background color for the table*/
+  border:1px solid black;
+  border-collapse: collapse;
+  margin-left: 2%;
+  background: #6B8789;
+}
+
+.leaderboardBox th, td {
+padding: 15px;
+}
+.leaderboardBox th{
+padding-right: 100%;/*adjusts the heading of the table*/
+padding-bottom: 0.5%;/*adjusts the padding of the space in the heading cells for the bottom part*/
+color:white;
+}
+.leaderboardBox td{/*makes the data that is written in the table white color*/
+color:white;
+}
+
+
+ 
+
+
+ /*LOGIN PAGE CSS*/
+ .LoginBox{/*Login background box design in the login page*/
+  width:30%;
+  height:75%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right:auto; 
+  margin-top: 2%; 
+  background-color: #514949;
+  opacity: 0.85;
+
+ }
+
+ .LoginHeading{/*designing the login heading*/
+  color:white;
+  margin-right: 72%;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+ }
+
+ 
+ .LoginTable{/*this is made to center the table in the login page*/
+  margin-right:auto;
+  margin-left: auto;
+ 
+
+ }
+ 
+ 
+
+
+
+ /*REGISTRATION PAGE CSS*/
+ .RegisterBox{/*background box of the register box in the register page*/
+  width:32%;
+  height:75%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right:auto; 
+  margin-top: 2%; 
+  background-color: #514949;
+  opacity: 0.85;
+}
+ .RegisterHeading{/*Register heading CSS to design the heading*/
+  color:white;
+  margin-right: 50%;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+ }
+ .RegisterTable{/*this is made to center the table in the register page*/
+  margin-right:auto;
+  margin-left: auto;
+
+ }
+
+ /*GAME PAGE CSS*/
+  #gameBody{
+  overflow: hidden;
+ }  
+ 
+  #movingCloud1{
+  height: 20%;
+  width: 10%;
+  position : absolute;
+  margin-left:-40%;
+  
+  z-index: -1;
+  
+  
+}
+#movingCloud2{
+  height: 18%;
+  width: 10%;
+  position : absolute;
+  margin-left:29%;
+  z-index:-1;
+  
+}
+
+
+
+.gameFooter2{/*this is the footer at the bottom of each page*/
+  background-color: #A3B7EB;
+  margin-top: -2.3%;
+  margin-bottom: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  
+  
+  
+}
+
+
+
+
+
+  

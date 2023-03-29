@@ -1,0 +1,68 @@
+<html><!--this has the same comments (as HomePage.html) up till after the navigation links-->
+    <head>
+        <title>Rocketman - Leaderboard</title>
+        <link href="../css/styles.css" type="text/css" rel="stylesheet">
+       
+        <script src="../js/LeaderBoard.js"></script>
+        
+    </head>
+    
+    <body onload="init()">
+        <div  id="navigation" style="text-align: center;"><!--Body starts with first div i.e., navigation-->
+            <img class="navbarLogo" src="../imgs/navbarLogo.png"><!--The logo nav bar logo-->
+            <a  href="HomePage.html">Home</a><!--link to homePage-->
+            <a href="RulesPage.html">Rules</a><!--link to the rules page-->
+            <a href="GamePage.html">Game</a><!--link to gamePage-->
+            <a class="selected" href="LeaderboardPage.html">Leaderboard</a><!--selected class is here because the LeaderboardPage is selected-->
+            <a class="split" href="LoginPage.html">Login</a><!--Split class is here because we are going to keep this in in the right side-->
+            <a class="split" href="Register2.html">Register</a><!--Split class is here also because we are going to keep this in in the right side-->
+            <div class="box1"><!--A sub div within the navigation bar for displaying the profile of the user(as of now its guest)-->
+                <p style="color:white"> Welcome <span id="profile"></span> </p>
+             </div>
+        
+            
+        
+        </div>
+        <div class="leaderboardBox"><!--the div after navigation for the background of the leaderboardBox-->
+            <h1 class="LeaderboardHeading">LEADERBOARD</h1><!--inside the div and inside the box is this heading which is styled in the CSS with the class name-->
+            <table class="leaderboardTable" id="jsLeaderboard"><!--Table is made here(inside the leaderboard js file)-->
+                <tr >
+                  
+                   <th width="10%">NO.</th>
+                  <th>NAME</th>
+                  <th>SCORE</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>kk</td>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>sk</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>milan</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>kurt</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>sindhu</td>
+                    <td>100</td>
+                  </tr> 
+              </table>
+            <br>
+        </div>
+        <br>
+        <div><!--next div with footer-->
+            <p class="footer">Web Page made by Krish Kalvani</p>
+        </div>
+    </body>
+</html>

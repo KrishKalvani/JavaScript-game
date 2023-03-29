@@ -1,0 +1,85 @@
+<html><!--this has the same comments (as HomePage.html) up till after the navigation links-->
+    <head>
+        <title>Rocketman - Login</title>
+        <link href="../css/styles.css" type="text/css" rel="stylesheet"> 
+        <script type="text/javascript" src="../js/myInitFunction.js"></script>
+    </head>
+    <style>
+        .LoginBoxButton{ /*internal css for the login button and hover effect*/
+            height:6%;
+            width:16%;
+            background: #5075BD;
+            border: 1px solid #000000;
+            color:white;
+            font-size:100%;
+
+        }
+        .LoginBoxButton:hover{/*hover effect for the login button*/
+            
+    background-color: #4a469f;
+    color: white;
+    cursor: pointer;
+  }
+  .LogOutBoxButton{ /*internal css for the login button and hover effect*/
+            height:6%;
+            width:17%;
+            background: #5075BD;
+            border: 1px solid #000000;
+            color:white;
+            font-size:100%;
+
+        }
+        .LogOutBoxButton:hover{/*hover effect for the login button*/
+            
+    background-color: #4a469f;
+    color: white;
+    cursor: pointer;
+  }
+
+    </style>
+    
+    <body onload="init()">
+        <div  id="navigation" style="text-align: center;"><!--Body starts with first div i.e., navigation-->
+            <img class="navbarLogo" src="../imgs/navbarLogo.png"><!--The logo nav bar logo-->
+            <a href="HomePage.html">Home</a><!--link to the homePage-->
+            <a href="RulesPage.html">Rules</a><!--link to the rulesPage-->
+            <a href="GamePage.html">Game</a><!--link to the gamePage-->
+            <a href="LeaderboardPage.html">Leaderboard</a><!--link to the LeaderboardPage-->
+            <a class="selectedLogin" class="split" href="LoginPage.html">Login</a><!--selectedLogin class will keep the "login" from the navbar underlined and highlighted black color after selection-->
+            <a class="split" href="Register2.html">Register</a><!--Split class is here and in the previous line also because we are going to keep this in in the right side-->
+            <div class="box1"><!-- a sub div - this is the welcome guest box in the navbar-->
+                <p style="color:white"> Welcome <span id="profile"></span> </p>
+             </div>
+            
+        
+        </div>
+        <div class="LoginBox"><!--Here we are creating the login box background-->
+            <h1 class="LoginHeading">Login</h1><!--Creating the heading "login"-->
+            <br>
+              <form onsubmit="return false;"><!--we need to take user input so we use form and add the list of credentials-->
+                <table class="LoginTable" style="background-color:black;"><!--to organize our credentials and line them up we put them in a table-->
+                    <tr>
+                <td><label style="color: white; font-size: 150%;" for="username">Username:</label></td><!--Username label-->
+                <td><input type="username" id="username" name="username"></td><br><br><!--username input box, type is username, i.e., a textbox kind of input box-->
+                </tr>
+            <tr>
+                <td><label style="color: white; font-size:150%;" for="Loginpwd">Password:</label></td><!--password label-->
+                <td><input type="password" id="Loginpwd" name="password" minlength="8"><br><br></td><!--password input box, type is password which makes the input concealed-->
+                </tr>
+            </table>
+                <br>
+                <!--here the login button is made with a submit type which will store the information once clicked(if user entered the credentials)-->
+                <input class="LoginBoxButton" style="margin-left:50%; margin-top:10%;" type="submit" value="LOGIN" onclick="Login();"><!--we use inline CSS here, and other places also-->
+                 <button class="LogOutBoxButton" onclick="logOut();">LOGOUT</button>
+              </form>
+              <!--REFERENCE for the form - W3Schools :https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_password-->
+            
+        </div>
+        <script src="../js/Login.js"></script>
+        <br><br><br><br>
+
+        <div><!--next div with footer-->
+            <p class="footer">Web Page made by Krish Kalvani</p>
+        </div>
+    </body>
+</html>

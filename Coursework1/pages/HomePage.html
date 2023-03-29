@@ -1,0 +1,46 @@
+<html><!--Start of the program-->
+    <head>
+        <title>Rocketman - Home</title> <!--This is the title of the tab page(also for every page)-->
+        <link href="../css/styles.css" type="text/css" rel="stylesheet"><!--Link connecting to the CSS-->
+        <script type="text/javascript" src="../js/myInitFunction.js"></script>
+    </head>
+    
+    <body onload="init()" ><!--Main content-->
+        <div id="navigation"><!--Body starts with first div i.e., navigation-->
+            <img class="navbarLogo" src="../imgs/navbarLogo.png"><!--The logo nav bar logo-->
+            <a class="selected" href="HomePage.html">Home</a><!--selected class is here because the homePage is selected-->
+            <a href="RulesPage.html">Rules</a><!--link to the rules page-->
+            <a href="GamePage.html">Game</a><!--link to the game page-->
+            <a href="LeaderboardPage.html">Leaderboard</a><!--link to the leaderboard page-->
+            
+            <a class="split" href="LoginPage.html">Login</a><!--Split class is here because we are going to keep these 2 in the right side-->
+            <a class="split" href="Register2.html">Register</a>
+            
+            <div class="box1"><!--A sub div within the navigation bar for displaying the profile of the user(as of now its guest)-->
+               <p style="color:white"> Welcome <span id="profile"></span> </p>
+            </div>
+         
+        </div>
+        <img class="cloud1" src="../imgs/cloudsPng.png"><!--clouds on the right side-->
+        <img class="cloud2" src="../imgs/clouds2.png"><!--clouds on the left side-->
+        <img class="meteor1" src="../imgs/meteors.png"><!--both these meteors are same, the one on the left side of the home page is flipped horizontally-->
+        <img class="meteor2" src="../imgs/meteors.png">
+        
+        <img class="Logo" src="../imgs/RocketWithTitle3.png"><!--Below navigation bar, the main content i.e., rocket picture and its title-->
+        
+        <button class="registerButton" onclick="window.location.href='Register2.html'"><!--Register button which leads to the register-->
+            REGISTER
+        </button>
+        <button class="loginButton" onclick="window.location.href='LoginPage.html'"><!--Login button which leads to the login page-->
+            LOGIN
+        </button><!--REFERENCE -W3docs:https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html-->
+
+        <div><!--next div with footer-->
+            <p class="footer">Web Page made by Krish Kalvani</p>
+        </div>
+
+
+    
+        
+    </body><!--end of home page content-->
+</html><!--end of program-->
